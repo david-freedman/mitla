@@ -1,0 +1,256 @@
+/* header */
+
+header.header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+header.header .line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header.header .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding-top: 120px;
+}
+.menu_wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    margin: 0 24px 0 41px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background: #ECECEC;
+    border-radius: 4px;
+    position: relative;
+    span {
+        background: #212121;
+        border-radius: 36px;
+        height: 2px;
+        position: absolute;
+        right: 15px;
+        pointer-events: none;
+        &:first-child {
+            top: 17px;
+            width: 24px;
+        }
+        &:nth-child(2) {
+            top: 28px;
+            width: 30px;
+        }
+        &:last-child {
+            bottom: 18px;
+            width: 18px;
+        }
+    }
+}
+
+.nav {
+    background-color: #fff;
+    padding: 35px 0 77px;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: none;
+    &.active {
+        display: block;
+    }
+    div.container {
+        max-width: 1400px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    ul {
+        list-style: none;
+    }
+
+    li + li {
+        margin-top: 15px;
+    }
+    a {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.language,
+.country {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language span,
+.country span {
+    margin-right: 6px;
+    color: #212121;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.language_content {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #34343455;
+    display: none;
+    &.active {
+        display: flex;
+    }
+}
+.language_inner {
+    max-width: 1400px;
+    width: 100%;
+    padding: 62px 79px 88px 62px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    h2 {
+        text-align: left;
+    }
+}
+.language_items {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    a {
+        width: 135px;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FAFAFA;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        & + a {
+            margin-left: 20px;
+        }
+        &.active {
+            background-color: #F25E57;
+            color: #fff;
+        }
+    }
+}
+.language_close {
+    cursor: pointer;
+    position: absolute;
+    top: 26px;
+    right: 31px;
+}
+
+.country {
+    margin: 0 30px;
+}
+
+.header_categories {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 45px 0 39px;
+}
+
+.header_category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header_category span {
+    color: #212121;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.header_category img {
+    margin-bottom: 8px;
+}
+.header_category + .header_category {
+    margin-left: 28px;
+}
+
+.header_button-tel{
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    & > a > img {
+        display: none;
+    }
+}
+
+.header_button-tel > a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    margin-right: 15px;
+}
+.header_button-links  {
+    display: flex;
+    align-items: center;
+}
+.header_button-links a + a {
+    margin-left: 11px;
+}
+
+.header_button-partner {
+    background: #25B2B4;
+    border-radius: 4px;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_button-partner span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.header_button-partner img {
+    margin-right: 13px;
+}
+
+.header_user {
+    width: 60px;
+    height: 60px;
+    background: #ECECEC;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 17px;
+}
